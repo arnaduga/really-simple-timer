@@ -98,6 +98,7 @@ resetButton.addEventListener("click", () => {
   isTimerRunning = false;
   displayTimeLeft(getDurationFromQueryString());
   timerDisplay.classList.remove("timeout");
+  timerDisplay.classList.remove("paused");
   timerDisplay.classList.remove("pulsate");
   startButton.classList.remove("hidden");
   resetButton.classList.add("hidden");
