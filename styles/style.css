@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url(fonts/Dosis-VariableFont_wght.ttf) format('truetype');
+   }
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Dosis, Arial, sans-serif;
+    background: url('../images/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .timer-container {
+    text-align: center;
+    width: 600px; /* Fixed width */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Optional: adds shadow for better visibility */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent background for better readability */
+    border-radius: 10px; /* Optional: rounds the corners of the container */
+    padding: 100px;
+  }
+  .timer {
+    font-size: 250px;
+    margin-bottom: 20px;
+  }
+  .button {
+    font-size: 25px;
+    padding: 15px 60px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: rgb(100, 100, 100); /* Slightly transparent background for buttons for visibility */
+    color: #fff; /* White text for visibility */
+    border: none;
+    border-radius: 8px;
+  }
+  .hidden {
+    display: none;
+  }
+  .timeout {
+    color: #FF0000;
+  }
+  .paused {
+    color: rgba(100,100,100,1); 
+  }
+
+  .pulsate {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+    }
+  @-webkit-keyframes pulsate {
+      0% { 
+          opacity: 0.2;
+      }
+      50% { 
+          opacity: 1.0;
+      }
+      100% { 
+          opacity: 0.2;
+      }
+  }
+
+  button {
+    font-family: Dosis;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
